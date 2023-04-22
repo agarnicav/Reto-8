@@ -139,7 +139,7 @@ Diseñar una función que permita calcular una aproximación de la función expo
 Diseñar una función que permita calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. nota: use math para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
 ![9](https://user-images.githubusercontent.com/124607325/233801699-f610f72b-1975-4c51-b8e2-58e28b9747fe.png)
  
-       # Se le pide ingresar un valor para x y otro valor para n.
+       # Se pide ingresar un valor para x y otro valor para n.
 
       x = float(input("Ingrese un valor para x: "))
       n = int(input("Ingrese un valor para n: "))
@@ -173,7 +173,7 @@ Disclaimer: Para las aproximaciones de series determine con que valor n se obtie
 
 import math
 
-      # Pedimos al usuario que ingrese un valor para x en el rango [-1, 1] y un valor para n
+      # se pude ingresar un valor para x en el rango [-1, 1] y un valor para n
       x = float(input("Ingrese un valor para x: (x debe estar en el rango [-1, 1]) "))
       n = int(input("Ingrese un valor para n: "))
 
