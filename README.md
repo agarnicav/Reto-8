@@ -124,14 +124,83 @@ Diseñar una función que permita calcular una aproximación de la función expo
        # Calcula el término correspondiente de la serie de Maclaurin y lo agrega a la aproximación
            aproximado += ((x**i) / (math.factorial(i)))
 
-# Calcula el valor real de la función exponencial
-actual = math.exp(x)
+       # Calcula el valor real de la función exponencial
+       actual = math.exp(x)
 
-# Calcula la diferencia entre el valor real y la aproximación
-diff = actual - aproximado
+       # Calcula la diferencia entre el valor real y la aproximación
+       diff = actual - aproximado
 
-# Imprime los resultados
-print("Aproximación: " + str(aproximado) + ", Valor real: " + str(actual) + ", Diferencia: " + str(diff))
+       # Imprime los resultados
+       print("Aproximación: " + str(aproximado) + ", Valor real: " + str(actual) + ", Diferencia: " + str(diff))
+       
+      
+# Noveno punto 
+
+Diseñar una función que permita calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. nota: use math para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
+![9](https://user-images.githubusercontent.com/124607325/233801699-f610f72b-1975-4c51-b8e2-58e28b9747fe.png)
+ 
+       # Se le pide ingresar un valor para x y otro valor para n.
+
+      x = float(input("Ingrese un valor para x: "))
+      n = int(input("Ingrese un valor para n: "))
+       #Se importa la librería math.
+      import math
+
+      # Se inicia la variable 'aproximado' en 0.0.
+      # Se utiliza un ciclo 'for' para iterar desde 0 hasta n-1.
+      # Se actualiza la variable 'aproximado' con cada iteración, utilizando la fórmula de la serie de Taylor para el seno.
+      # En cada iteración se eleva (-1) a la i, se eleva x a la (2i+1) y se divide entre el factorial de (2i+1).
+       aproximado = 0.0
+       for i in range(n):
+       aproximado += (-1)i * x(2i+1) / math.factorial(2i+1)
+
+      # Se calcula el valor real de sin(x) utilizando la función math.sin().
+      # Se calcula la diferencia entre la aproximación y el valor real de sin(x).
+       actual = math.sin(x)
+       diff = abs(actual - aproximado)
+
+      # Se muestra la aproximación, el valor real y la diferencia entre ellos.
+       print("Aproximación: " + str(aproximado) + ", Valor real: " + str(actual) + ", Diferencia: " + str(diff))
+
+
+# Decimo punto 
+Diseñar una función que permita calcular una aproximación de la función arcotangente alrededor de 0 para cualquier valor x en el rango [-1, 1], utilizando los primeros n términos de la serie de Maclaurin. nota: use math para traer la función arctan y mostrar la diferencia entre el valor real y la aproximación.
+ 
+ ![10](https://user-images.githubusercontent.com/124607325/233803425-d56e9d46-0fed-4ba0-9193-7adfcd005d8e.png)
+
+Disclaimer: Para las aproximaciones de series determine con que valor n se obtiene menos del 0.1% de error.
+
+
+import math
+
+      # Pedimos al usuario que ingrese un valor para x en el rango [-1, 1] y un valor para n
+      x = float(input("Ingrese un valor para x: (x debe estar en el rango [-1, 1]) "))
+      n = int(input("Ingrese un valor para n: "))
+
+      # Verificamos si el valor ingresado para x está en el rango [-1, 1]
+      if -1 <= x <= 1:
+          approx = 0
+          # Realizamos la aproximación de la función arcotangente utilizando la serie de Taylor
+          for i in range(n):
+               term = ((-1)**i * x**(2*i+1)) / (2*i+1)
+               approx += term
+          # Calculamos el valor real de la función arcotangente utilizando la función atan de la biblioteca math
+          actual = math.atan(x)
+          # Calculamos la diferencia entre la aproximación y el valor real
+          diff = abs(actual - approx)
+          # Si la diferencia es mayor que 0.001 veces el valor real, aumentamos el número de términos en la serie y recalculamos la aproximación y la diferencia
+          while diff > 0.001 * abs(actual):
+              n += 2
+              approx = 0
+              for i in range(n):
+                   term = ((-1)**i * x**(2*i+1)) / (2*i+1)
+                   approx += term
+              diff = abs(actual - approx)
+          # Imprimimos la aproximación, el valor real y la diferencia
+          print("Aproximación: " + str(approx) + ", Valor real: " + str(actual) + ", Diferencia: " + str(diff))
+      else:
+          # Si el valor ingresado para x no está en el rango [-1, 1], le indicamos al usuario que lo vuelva a intentar
+          print("El valor ingresado para x no está en el rango [-1, 1]. Por favor, inténtelo de nuevo.")
 
 
 
