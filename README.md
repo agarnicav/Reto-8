@@ -171,7 +171,7 @@ Diseñar una función que permita calcular una aproximación de la función arco
 Disclaimer: Para las aproximaciones de series determine con que valor n se obtiene menos del 0.1% de error.
 
 
-import math
+      import math
 
       # se pude ingresar un valor para x en el rango [-1, 1] y un valor para n
       x = float(input("Ingrese un valor para x: (x debe estar en el rango [-1, 1]) "))
