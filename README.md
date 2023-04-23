@@ -1,6 +1,6 @@
 # Primer punto 
 
-Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
+Se realiza codigo para imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
 
           # Se utiliza la función range() para generar los números del 1 al 100 y se itera sobre ellos con un bucle for
           for n in range(1, 101):
@@ -11,7 +11,7 @@ Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cua
 
 # Segundo punto 
 
-Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
+Se realiza codigo para imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 
 
       # Se utiliza la función range() para generar los números impares desde 1 hasta 999 y se itera sobre ellos con un bucle for
@@ -28,7 +28,7 @@ Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente ot
 
 # Tercer punto 
 
-Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
+Se realiza codigo para i mprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado.
 
        # Se solicita ingresar un número entero y se almacena en la variable n.
        n = int(input("Ingrese un número: "))
@@ -44,7 +44,7 @@ Imprimir los números pares en forma descendente hasta 2 que son menores o igual
                
 # Cuarto punto 
 
-Imprimir los números de 1 hasta un número natural n dado, cada uno con su respectivo factorial.
+Se realiza codigo para imprimir los números de 1 hasta un número natural n dado, cada uno con su respectivo factorial.
 
         # Se solicita ingresar un número entero y se almacena en la variable n.
         n = int(input("Ingrese un número: "))
@@ -61,7 +61,7 @@ Imprimir los números de 1 hasta un número natural n dado, cada uno con su resp
 
 # Quinto punto
 
-Calcular el valor de 2 elevado a la potencia n usando ciclos for.
+Se realiza codigo para calcular el valor de 2 elevado a la potencia n usando ciclos for.
 
        # Se solicita ingresar un número entero y se almacena en la variable n.
        n = int(input("Ingrese un número: "))
@@ -77,7 +77,7 @@ Calcular el valor de 2 elevado a la potencia n usando ciclos for.
 
 # Sexto punto 
 
-Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for.
+Se realiza codigo para leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for.
 
        # Se solicita ingresar un número real x y un número natural n y se almacenan en las variables correspondientes.
        x = float(input("Ingrese un número: "))
@@ -93,7 +93,7 @@ Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando c
 
 # Septimo punto
 
-Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
+Se realiza codigo para muestrar las tablas de multiplicar del 1 al 9.
 
         # Se utiliza un ciclo for para iterar desde 1 hasta 9 para mostrar las tablas de multiplicar del 1 al 9.
         for u in range(1,10):
@@ -107,7 +107,7 @@ Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
                 
 # Octavo punto
 
-Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. nota: use math para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
+Se realiza codigo para  calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. nota: use math para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
 
 ![8](https://user-images.githubusercontent.com/124607325/233765041-36ef1ecf-4fe2-4711-9e76-54febb690ead.png)
 
@@ -136,7 +136,7 @@ Diseñar una función que permita calcular una aproximación de la función expo
       
 # Noveno punto 
 
-Diseñar una función que permita calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. nota: use math para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
+Se realiza codigo para que permite calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. nota: use math para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
 ![9](https://user-images.githubusercontent.com/124607325/233801699-f610f72b-1975-4c51-b8e2-58e28b9747fe.png)
  
        # Se pide ingresar un valor para x y otro valor para n.
@@ -164,11 +164,11 @@ Diseñar una función que permita calcular una aproximación de la función seno
 
 
 # Decimo punto 
-Diseñar una función que permita calcular una aproximación de la función arcotangente alrededor de 0 para cualquier valor x en el rango [-1, 1], utilizando los primeros n términos de la serie de Maclaurin. nota: use math para traer la función arctan y mostrar la diferencia entre el valor real y la aproximación.
+Se realiza codigo que permite calcular una aproximación de la función arcotangente alrededor de 0 para cualquier valor x en el rango [-1, 1], utilizando los primeros n términos de la serie de Maclaurin. nota: use math para traer la función arctan y mostrar la diferencia entre el valor real y la aproximación.
  
  ![10](https://user-images.githubusercontent.com/124607325/233803425-d56e9d46-0fed-4ba0-9193-7adfcd005d8e.png)
 
-Disclaimer: Para las aproximaciones de series determine con que valor n se obtiene menos del 0.1% de error.
+Para las aproximaciones de series determine con que valor n se obtiene menos del 0.1% de error.
 
 
       import math
